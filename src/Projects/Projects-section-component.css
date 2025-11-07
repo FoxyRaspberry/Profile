@@ -10,21 +10,20 @@
   font-size: 1.5em;
 }
 
-.projects-section__skill-card-container {
+.projects-section__project-card-container {
   margin-top: 20px;
 }
 
-/* .projects-section__skill-card-list {
+.projects-section__project-card-list {
+  list-style-type: none;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  list-style-type: none;
-} */
+  gap: 30px;
+}
 
 @media (width >=576px) {
-  /* .projects-section__skill-card-list {
+  /* .projects-section__project-card-list {
     flex-direction: row;
     flex-wrap: wrap;
   } */
@@ -37,13 +36,13 @@
 }
 
 @media (width >=992px) {
-    .projects-section__title {
+  .projects-section__title {
     font-size: 48px;
   }
 
-  .projects-section__skill-card-list {
-    flex-wrap: nowrap;
-  }
+.projects-section__project-card-list {
+  flex-direction: row;
+}
 }
 
 @media (width >=1200px) {
@@ -57,4 +56,3 @@
     font-size: 56px;
   }
 }
-

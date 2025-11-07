@@ -5,12 +5,25 @@
   --secondary-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   --main-text-color: #051937;
   --secondary-text-color: #a8eb12;
+  --radius: .625rem;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
 }
 
 body {
