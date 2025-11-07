@@ -1,4 +1,5 @@
 import formGeneratorImage from '../../assets/form-generator.svg';
+import ticTacToeImage from '../../assets/tic-tac-toe.svg';
 import shelterImage from '../../assets/shelter.svg';
 import englishForKidsImage from '../../assets/english-for-kids.svg';
 
@@ -12,16 +13,24 @@ export const projectsCard = [
   },
   {
     id: 2,
+    image: ticTacToeImage,
+    title: 'Tic-Tac-Toe game',
+    subtitle: 'A tic-tac-toe game implemented in React',
+    link: 'https://foxyraspberry.github.io/Let-s-play-tic-tac-toe/',
+  },
+
+  {
+    id: 3,
     image: shelterImage,
     title: 'Shelter',
     subtitle: 'A website with responsive layout and JavaScript support.',
     link: 'https://foxyraspberry.github.io/Shelter/pages/main/',
   },
   {
-    id: 3,
+    id: 4,
     image: englishForKidsImage,
     title: 'English for kids',
     subtitle: 'A web application for learning English words in a game-like format.',
     link: 'https://foxyraspberry.github.io/english-for-kids/',
   },
-]
+];
