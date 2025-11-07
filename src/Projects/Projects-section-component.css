@@ -1,4 +1,5 @@
 .projects-section {
+  background-color: var(--main-background-color);
   padding: 40px 0;
 }
 
@@ -20,13 +21,6 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-}
-
-@media (width >=576px) {
-  /* .projects-section__project-card-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
 }
 
 @media (width >=768px) {
