@@ -2,6 +2,7 @@ import './App.css'
 import { Header } from './Header/Header-section-component.jsx'
 import { Hero } from './Hero/Hero-section-component.jsx'
 import { Skills } from './Skills/Skills-section-component.jsx'
+import { Projects } from './Projects/Projects-section-component.jsx'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Header></Header>
       <Hero></Hero>
       <Skills></Skills>
+      <Projects></Projects>
     </>
   )
 }
