@@ -1,5 +1,4 @@
 import './Skill-card-component.css';
-// import { skillsCard } from './skills-card.js'
 
 export function SkillCard({image, name, value}) {
 

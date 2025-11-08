@@ -1,4 +1,4 @@
-import './project-card-component.css';
+import './Project-card-component.css';
 
 export function ProjectCard({image, title, subtitle, link}) {
 
