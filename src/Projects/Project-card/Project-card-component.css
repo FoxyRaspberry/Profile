@@ -43,7 +43,7 @@
 
 .projects-section__project-card-link {
   text-decoration: none;
-  color: var(--main-text-color);
+  color: #010813;
 }
 
 @media (width >=576px) {

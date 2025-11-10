@@ -1,5 +1,4 @@
 .hero-section {
-  background-color: var(--main-background-color);
   padding: 40px 0;
 }
 
@@ -36,14 +35,13 @@
 }
 
 .hero-section__contact-logo-gh {
-  background-image: url(../assets/gh-contact.svg);
+  background-image: url(../assets/github.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
   width: 40px;
   height: 40px;
-
 }
 
 .hero-section__contact-logo-tg:hover,

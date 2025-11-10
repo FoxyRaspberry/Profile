@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root {
-  --main-background-color: #f8faff;
-  --secondary-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-  --main-text-color: #051937;
-  --secondary-text-color: #a8eb12;
+  /* --main-background-color: #511038; */
+  --main-background-color: #17042b;
+  --secondary-background-color: linear-gradient(90deg, #f5ffe0,#41EF29);
+  /* --main-text-color: #b7ff00; */
+  /* --main-text-color: #41EF29; */
+  --main-text-color: #f5ffe0;
+  --secondary-text-color: #f5ffe0;
   --radius: .625rem;
 }
 
@@ -23,6 +26,7 @@
 
 html {
   box-sizing: border-box;
+  background-color: var(--main-background-color);
   height: 100%;
 }
 

@@ -21,6 +21,11 @@
 .skills-section__skill-card-image {
   width: 40px;
   height: 40px;
+  filter: grayscale(1);
+}
+
+.skills-section__skill-card-image:hover {
+  filter: none;
 }
 
 .skills-section__skill-card-name {
