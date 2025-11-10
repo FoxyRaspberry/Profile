@@ -7,8 +7,8 @@ export function Skills() {
     <>
       <div className='skills-section'>
         <div className='wrapper'>
-          <div className='skills-section__item-container'>
-            <h1 className='skills-section__title'>Skills</h1>
+          <div className='skills-section__item-container '>
+            <div className='gradient-underline'><h1 className='skills-section__title'>Skills</h1></div>
             <p className='skills-section__subtitle'>The main technologies and tools that I own.</p>
           </div>
           <div className='skills-section__skill-card-container'>

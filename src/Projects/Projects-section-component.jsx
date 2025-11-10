@@ -8,7 +8,7 @@ export function Projects() {
       <div className='projects-section'>
         <div className='wrapper'>
           <div className='projects-section__item-container'>
-            <h1 className='projects-section__title'>Projects</h1>
+            <div className='gradient-underline'><h1 className='projects-section__title'>Projects</h1></div>
             <p className='projects-section__subtitle'>Here are some of the projects I've worked on. This is a constantly growing list of my work, demonstrating my skills and interests in web development.</p>
           </div>
           <div className='projects-section__project-card-container'>

@@ -9,7 +9,7 @@ export function Experience() {
       <div className='experience-section'>
         <div className='wrapper'>
           <div className='experience-section__item-container'>
-            <h1 className='experience-section__title'>Work and Education</h1>
+            <div className='gradient-underline'><h1 className='experience-section__title'>Work and Education</h1></div>
             <p className='experience-section__subtitle'>I develop and optimize landing pages for a large company, and I also work on several personal projects, gaining experience in web development. Here are some examples of my work experience and education.</p>
           </div>
           <div className='experience-section__experience-card-container'>
