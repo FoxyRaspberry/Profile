@@ -3,40 +3,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   padding: 20px;
-  width: 170px;
-  height: 125px;
+  filter: grayscale(1);
+  transition: box-shadow ease-in-out 200ms, filter ease-in-out 200ms;
 }
 
-.skills-section__skill-card--gradient-border {
-  border: 1px solid #a8eb12;
-  border-radius: 8px;
-  background: #05193714;
-}
-
-.skills-section__skill-card--gradient-border:hover {
+.skills-section__skill-card:hover {
   box-shadow: 0px 10px 52px 15px rgba(168, 235, 18, 0.2);
+  filter: grayscale(0);
 }
 
 .skills-section__skill-card-image {
   width: 40px;
   height: 40px;
-  filter: grayscale(1);
-}
-
-.skills-section__skill-card-image:hover {
-  filter: none;
 }
 
 .skills-section__skill-card-name {
   font-size: 15px;
-}
-
-@media (width >=576px) {
-  .skills-section__skill-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
