@@ -1,7 +1,6 @@
-export const workExperienceCard = [
+const workExperienceCardsInitialData = [
   {
     id: 1,
-    period: '09.2022 - 04.2023',
     periodFrom: '2022-09',
     periodTo: '2023-04',
     title: 'Course "UpSkillMe" from the company "EPAM"',
@@ -10,7 +9,6 @@ export const workExperienceCard = [
 
   {
     id: 2,
-    period: '04.2022 - 05.2022',
     periodFrom: '2022-04',
     periodTo: '2022-05',
     title: 'HTML Academy and HTML and CSS Tutorials at w3schools',
@@ -19,7 +17,6 @@ export const workExperienceCard = [
 
   {
     id: 3,
-    period: '05.2023 - 09.2023',
     periodFrom: '2023-05',
     periodTo: '2023-09',
     title: 'RS Schools Course "JavaScript/Front-end"',
@@ -28,17 +25,14 @@ export const workExperienceCard = [
 
   {
     id: 4,
-    period: '11.2025 - present',
     periodFrom: '2025-11',
     periodTo: null,
     title: 'React Developer Course from Praktikum',
     subtitle: 'I am exploring the React ecosystem, writing my own web app, and mastering Typescript and other useful tools.',
   },
 
-
   {
     id: 5,
-    period: '04.2023 - present',
     periodFrom: '2023-04',
     periodTo: null,
     title: 'Independent development',
@@ -47,7 +41,6 @@ export const workExperienceCard = [
 
   {
     id: 6,
-    period: '10.2023 - 09.2025',
     periodFrom: '2023-10',
     periodTo: '2025-09',
     title: 'A large company engaged in marketing',
@@ -55,21 +48,46 @@ export const workExperienceCard = [
   },
 ];
 
-workExperienceCard.sort((a, b) => {
-  const periodFromDifference = parsePeriodFrom(b.periodFrom) - parsePeriodFrom(a.periodFrom);
-  if (periodFromDifference !== 0) {
-    return periodFromDifference;
+export const workExperienceCard = [...workExperienceCardsInitialData]
+  .sort((a, b) => {
+    const periodFromDifference = parsePeriodFrom(b.periodFrom) - parsePeriodFrom(a.periodFrom);
+    if (periodFromDifference !== 0) {
+      return periodFromDifference;
+    }
+
+    const periodToDifference = parsePeriodTo(b.periodTo) - parsePeriodTo(a.periodTo);
+    return !Number.isNaN(periodToDifference) ? periodToDifference : 0;
+  })
+  .map((card) => {
+    const period = generatePeriodText(card.periodFrom, card.periodTo);
+    const { id, subtitle, title } = card;
+    return {
+      id,
+      period,
+      subtitle,
+      title,
+    };
+  });
+
+
+function generateDateText(dateStringOrNull) {
+  if (dateStringOrNull !== null) {
+    const date = new Date(dateStringOrNull);
+    const month = (date.getMonth() + 1 + '').padStart(2, '0');
+    const year = date.getFullYear();
+    return `${year}-${month}`;
   }
+  return 'present';
+}
 
-  const periodToDifference = parsePeriodTo(b.periodTo) - parsePeriodTo(a.periodTo);
-  return !Number.isNaN(periodToDifference) ? periodToDifference : 0;
-});
-
+function generatePeriodText(periodFrom, periodTo) {
+  return `${generateDateText(periodFrom)} – ${generateDateText(periodTo)}`;
+}
 
 function parsePeriodFrom(periodFrom) {
-  return Date.parse(periodFrom)
+  return Date.parse(periodFrom);
 }
 
 function parsePeriodTo(periodTo) {
-  return periodTo !== null ? Date.parse(periodTo) : Infinity
+  return periodTo !== null ? Date.parse(periodTo) : Infinity;
 }
