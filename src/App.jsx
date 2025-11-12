@@ -4,6 +4,7 @@ import { Hero } from './Hero/Hero-section-component.jsx'
 import { Skills } from './Skills/Skills-section-component.jsx'
 import { Projects } from './Projects/Projects-section-component.jsx'
 import { Experience } from './Experience/Experience-section-component.jsx'
+import { Footer } from './Footer/Footer-section-component.jsx'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Skills></Skills>
       <Projects></Projects>
       <Experience></Experience>
+      <Footer></Footer>
     </>
   )
 }
