@@ -14,8 +14,8 @@ export function Skills() {
           <div className='skills-section__skill-card-container'>
             <ul className='skills-section__skill-card-list'>
               {skillsCard.map((card) => (
-                <li className='skills-section__skill-card--gradient-border'>
-                  <SkillCard key={card.id} image={card.image} name={card.name} />
+                <li key={card.id} className='skills-section__skill-card--gradient-border'>
+                  <SkillCard image={card.image} name={card.name} />
                 </li>
               ))}
             </ul>
