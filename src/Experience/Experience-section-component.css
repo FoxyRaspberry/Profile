@@ -10,8 +10,7 @@
   font-size: 1.5em;
 }
 
-.experience-section__experience-card-container {
-}
+.experience-section__experience-card-list-container {}
 
 .experience-section__experience-card-list {
   display: flex;
@@ -22,8 +21,7 @@
 }
 
 @media (width >=576px) {
-  .experience-section__experience-card-list {
-  }
+  .experience-section__experience-card-list {}
 }
 
 @media (width >=768px) {
@@ -33,12 +31,11 @@
 }
 
 @media (width >=992px) {
-    .experience-section__title {
+  .experience-section__title {
     font-size: 48px;
   }
 
-  .experience-section__experience-card-list {
-  }
+  .experience-section__experience-card-list {}
 }
 
 @media (width >=1200px) {
@@ -53,15 +50,26 @@
   }
 }
 
-.experience-section__experience-card-item {
-  position: relative;
-  background-color: #05193714;
+.experience-section__experience-card-container {
   border: 1px solid #a8eb12;
   border-radius: calc(var(--radius) + 4px);
   padding: 20px;
-  max-width: 700px;
 }
 
-.experience-section__experience-card-item:hover {
+.experience-section__experience-card-container:hover {
   box-shadow: 0px 10px 52px 15px rgba(168, 235, 18, 0.2);
+}
+
+@media (width >=992px) {
+  .experience-section__experience-card-item {
+    display: flex;
+  }
+
+  .experience-section__experience-card-item:nth-child(even) {
+    justify-content: flex-end;
+  }
+
+  .experience-section__experience-card-container {
+    width: 700px;
+  }
 }
