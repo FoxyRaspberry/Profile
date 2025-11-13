@@ -23,15 +23,8 @@
 }
 
 .skills-section__skill-card--gradient-border {
-  border: 1px solid #a8eb12;
+  border: 1px solid var(--border);
   border-radius: 8px;
-}
-
-@media (width >=576px) {
-  .skills-section__skill-card-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 }
 
 @media (width >=768px) {

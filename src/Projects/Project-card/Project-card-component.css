@@ -18,13 +18,13 @@
   align-items: center;
   width: 77px;
   gap: 5px;
-  background-color: #a8eb12;
+  background-color: var(--button);
   padding: 10px;
   border-radius: calc(var(--radius) - 2px);
 }
 
 .project-card__project-card-link-container:hover {
-  background-color: #aeff00;
+  background-color: var(--secondary-text-color);
 }
 
 .project-card__project-card-link {
