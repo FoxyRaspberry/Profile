@@ -14,7 +14,9 @@ export function Projects() {
           <div className='projects-section__project-card-container'>
             <ul className='projects-section__project-card-list'>
               {projectsCard.map((card) => (
-                <ProjectCard key={card.id} image={card.image} title={card.title} subtitle={card.subtitle} link={card.link}/>
+                <li key={card.id} className='projects-section__project-card'>
+                  <ProjectCard image={card.image} title={card.title} subtitle={card.subtitle} link={card.link} />
+                </li>
               ))}
             </ul>
           </div>
