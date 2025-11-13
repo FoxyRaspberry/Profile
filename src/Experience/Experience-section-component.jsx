@@ -15,7 +15,9 @@ export function Experience() {
           <div className='experience-section__experience-card-container'>
             <ul className='experience-section__experience-card-list'>
               {workExperienceCard.map((card) => (
-                <ExperienceCard key={card.id} period={card.period} title={card.title} subtitle={card.subtitle}/>
+                <li key={card.id} className='experience-section__experience-card-item'>
+                  <ExperienceCard period={card.period} title={card.title} subtitle={card.subtitle}/>
+                </li>
               ))}
             </ul>
           </div>
