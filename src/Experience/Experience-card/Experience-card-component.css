@@ -1,12 +1,12 @@
-.experience-section__experience-card-container {}
+.experience-card__container {}
 
-.experience-section__experience-card-text-container {
+.experience-card__text-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.experience-section__experience-card-text {
+.experience-card__period-and-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,12 +14,12 @@
   align-items: center;
 }
 
-.experience-section__experience-card-period {}
+.experience-card__period {}
 
-.experience-section__experience-card-title {
+.experience-card__title {
   font-size: 20px;
 }
 
-.experience-section__experience-card-subtitle {
+.experience-card__subtitle {
   font-size: 1em;
 }
