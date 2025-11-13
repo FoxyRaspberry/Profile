@@ -27,7 +27,7 @@ const workExperienceCardsInitialData = [
     id: 4,
     periodFrom: '2025-11',
     periodTo: null,
-    title: 'React Developer Course from Praktikum',
+    title: 'React Developer Course',
     subtitle: 'I am exploring the React ecosystem, writing my own web app, and mastering Typescript and other useful tools.',
   },
 
