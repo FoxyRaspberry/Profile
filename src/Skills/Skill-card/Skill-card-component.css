@@ -1,4 +1,4 @@
-.skills-section__skill-card {
+.skill-card__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,16 +9,16 @@
   transition: box-shadow ease-in-out 200ms, filter ease-in-out 200ms;
 }
 
-.skills-section__skill-card:hover {
+.skill-card__container:hover {
   box-shadow: 0px 10px 52px 15px var(--shadow);
   filter: grayscale(0);
 }
 
-.skills-section__skill-card-image {
+.skill-card__image {
   width: 40px;
   height: 40px;
 }
 
-.skills-section__skill-card-name {
+.skill-card__title {
   font-size: 15px;
 }
