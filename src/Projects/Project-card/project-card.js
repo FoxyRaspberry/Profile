@@ -30,7 +30,7 @@ export const projectsCard = [
     id: 4,
     image: englishForKidsImage,
     title: 'English for kids',
-    subtitle: 'A web application for learning English words in a game-like format.',
+    subtitle: 'A web application for learning English words in a game-like format, implemented in JavaScript.',
     link: 'https://foxyraspberry.github.io/english-for-kids/',
   },
 ];
