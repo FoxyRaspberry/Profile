@@ -1,0 +1,33 @@
+.project-card__image {
+  max-width: 100%;
+}
+
+.project-card__title {
+  font-size: 26px;
+}
+
+.project-card__subtitle {
+  font-size: 1em;
+}
+
+.project-card__link-container {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  width: 77px;
+  gap: 5px;
+  background-color: var(--button);
+  padding: 10px;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.project-card__link-container:hover {
+  background-color: var(--secondary-text-color);
+}
+
+.project-card__link {
+  text-decoration: none;
+  color: #010813;
+}

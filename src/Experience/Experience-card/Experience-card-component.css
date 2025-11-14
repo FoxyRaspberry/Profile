@@ -1,0 +1,28 @@
+.experience-card__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-card__period-and-title {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.experience-card__title {
+  font-size: 20px;
+}
+
+.experience-card__subtitle {
+  font-size: 1em;
+}
+
+@media (width >=768px) {
+  .experience-card__period-and-title {
+    flex-direction: row;
+    align-items: center;
+  }
+}

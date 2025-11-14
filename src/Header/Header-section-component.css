@@ -1,0 +1,32 @@
+.header-section {
+  padding: 10px 0;
+}
+
+.header-section__item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section-logo-container {
+  perspective: 1000px;
+}
+
+.header-section-logo {
+  display: block;
+  background: var(--secondary-background-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.header-section-logo:hover {
+  transform: rotateY(360deg);
+}
+
+.header-section__language {
+  font-size: 20px;
+  display: none;
+}

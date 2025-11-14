@@ -1,17 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+  --main-background-color: #010101;
+  --secondary-background-color: linear-gradient(90deg, #d6c9ce, #d81b60);
+  --gradient: linear-gradient(to right, #d81b60, #d6c9ce, transparent);
+  --border: #d81b60;
+  --button: #d81b60;
+  --shadow: rgb(216 27 96 / 30%);
+  --main-text-color: #d6c9ce;
+  --secondary-text-color: #ffd0e1;
+  --radius: .625rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  background-color: var(--main-background-color);
+  height: 100%;
+}
+
 body {
-  font-family: "Noto Sans", sans-serif;
-  color: #333;
+  font-family: "Oswald", sans-serif;
+  color: var(--main-text-color);
 }
 
 .wrapper {
   margin: auto;
-  width: 290px;
+  width: 300px;
+}
+
+.gradient-underline {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.gradient-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--gradient);
 }
 
 @media (width >=576px) {
@@ -22,18 +68,24 @@ body {
 
 @media (width >=768px) {
   .wrapper {
-    width: 720px;
+    width: 650px;
   }
 }
 
 @media (width >=992px) {
   .wrapper {
-    width: 940px;
+    width: 800px;
   }
 }
 
 @media (width >=1200px) {
   .wrapper {
-    width: 1140px;
+    width: 900px;
+  }
+}
+
+@media (width >=1440px) {
+  .wrapper {
+    width: 1200px;
   }
 }
