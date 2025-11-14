@@ -10,18 +10,12 @@
   font-size: 1.5em;
 }
 
-.experience-section__experience-card-list-container {}
-
 .experience-section__experience-card-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   list-style-type: none;
   margin-top: 20px;
-}
-
-@media (width >=576px) {
-  .experience-section__experience-card-list {}
 }
 
 @media (width >=768px) {
@@ -34,8 +28,6 @@
   .experience-section__title {
     font-size: 48px;
   }
-
-  .experience-section__experience-card-list {}
 }
 
 @media (width >=1200px) {
